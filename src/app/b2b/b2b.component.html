@@ -2,7 +2,7 @@
   <div class="col-lg-2 col-md-4 col-sm-12">
     <div
       class="d-flex flex-column p-3 text-white bg-dark"
-      style=" height: 60.2rem"
+      style="height: 60.2rem"
     >
       <a
         href="https://idc.net.pk/"
@@ -19,7 +19,12 @@
       <hr />
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="userprofile" routerLinkActive="active">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="userprofile"
+            routerLinkActive="active"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -37,7 +42,11 @@
           </a>
         </li>
         <li>
-          <a class="nav-link text-white" routerLink="dashboard" routerLinkActive="active">
+          <a
+            class="nav-link text-white"
+            routerLink="dashboard"
+            routerLinkActive="active"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -55,7 +64,11 @@
           </a>
         </li>
         <li>
-          <a class="nav-link text-white" routerLink="covidreports" routerLinkActive="active">
+          <a
+            class="nav-link text-white"
+            routerLink="covidreports"
+            routerLinkActive="active"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -73,7 +86,11 @@
           </a>
         </li>
         <li>
-          <a class="nav-link text-white" routerLink="changepassword" routerLinkActive="active">
+          <a
+            class="nav-link text-white"
+            routerLink="changepassword"
+            routerLinkActive="active"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -94,7 +111,11 @@
       <hr />
       <div class="logout">
         <h6>
-          Logout<button type="button" class="btn btn-dark m-1" (click)="logout(logout)">
+          Logout<button
+            type="button"
+            class="btn btn-dark m-1"
+            (click)="logout(logout)"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="90"
@@ -121,10 +142,91 @@
   </div>
 
   <div class="col-lg-10 col-md-8 col-sm-12">
+    <div class="col-md-12">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <span>Corporate Client Portal: </span>
 
+            <span>User Profile </span>
+          </a>
 
-     <router-outlet></router-outlet>
-     </div>
+          <div class="btn-group dropstart">
+            <a
+              class="btn"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-list-ul"
+                viewBox="1 1 16 10"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                />
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            <a class="btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <hr />
 
+      <router-outlet></router-outlet>
+    </div>
+    <!-- <div class="container-fluid">
+      <div class="footer">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid bg-dark">
 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="https://idc.net.pk/terms-of-use/">Terms & Conditions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://idc.net.pk/privacy-policy/">Privacy Statement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://idc.net.pk/contact-us/">Contact</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div> -->
+  </div>
 </div>
