@@ -1,0 +1,137 @@
+<div class="col-md-12">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a _ngcontent-nnu-c5 class="navbar-brand">
+        <span _ngcontent-nnu-c5>Corporate Client Portal: </span>
+
+        <span _ngcontent-nnu-c5>User Profile </span>
+      </a>
+
+      <div class="btn-group dropstart">
+        <a
+          class="btn"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-list-ul"
+            viewBox="1 1 16 10"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+            />
+          </svg>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        <a class="btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-person-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <hr />
+  <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <div class="card">
+        <img
+          src="../../assets/images/logo.jfif"
+          class="img"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Pakistan Telecommunication Authority (PTA)
+          </h5>
+          <p class="card-text">
+            PTA <br />
+            Login as: test
+          </p>
+          <!-- <a  class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-12 col-sm-12">
+      <!-- <div class="table-container">
+          <div class="table-content">
+            <h5 class="mb-2">Manage Profiles</h5>
+            <p>Select profile to view it's details or Delete a profile</p>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Manage Profiles</h5>
+                <p class="card-text">
+                  Select profile to view it's details or Delete a profile
+                </p>
+                <div
+                  class="table-responsive"
+                  style="max-height: 500px; overflow-y: auto"
+                >
+                  <table class="table table-hover fixed-height-table">
+                    <thead>
+                      <tr>
+                        <th class="line" scope="col">#</th>
+                        <th class="line" scope="col">Code</th>
+
+                        <th class="line" scope="col">PanelName</th>
+
+                        <th class="line" scope="col">Phone</th>
+                        <th class="line" scope="col">Address</th>
+                        <th class="line" scope="col">Email</th>
+                        <th class="line" scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of panelList; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ item.PanelCode }}</td>
+
+                        <td>{{ item.PanelName }}</td>
+                        <td>{{ item.PHONE || "-" }}</td>
+                        <td>{{ item.PanelAddress || "-"}}</td>
+
+                        <td>{{ item.EMAILS ||"-"}}</td>
+                        <td>
+                          <button type="button" class="btn btn-light">
+                            select
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+</div>

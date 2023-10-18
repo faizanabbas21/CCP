@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-xl-10 col-lg-8 col-md-8 col-sm-12">
+    <div class="login-container">
+      <div class="left-content">
+        <div class="container my-3">
+          <h5 class="mb-2">Corporate Clients Portal</h5>
+          <p>Online portal to view patient's medical reports</p>
+        </div>
+      </div>
+      <div class="left-content-2">
+        <div class="container">
+          <h3 class="mt-5">Islamabad Diagnostic Centre</h3>
+          <p>
+            The idea of Islamabad Diagnostic Center started with a mission to
+            offer all under one roof clinical diagnostic services and to become
+            the most trusted & reliable healthcare services provider in
+            Pakistan. <br />
+            <br />
+            Our team of over 2500 staff including a highly experienced and
+            qualified group of 250 doctors, are delivering more than 3 million
+            tests annually on a 24/7 basis. <br />
+            <br />
+            Note: In case you forget the password or need any assistance while
+            using the portal, Please write to us at medical@idc.net.pk
+          </p>
+
+          <div class="col-12">
+            <ul>
+              {{
+                users
+              }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+    <div class="login-container">
+      <div class="login-box">
+        <div class="logo">
+          <img src="../../assets/images/logo.jfif" alt="Logo" />
+        </div>
+
+        <h3>Login</h3>
+
+        <form #loginForm="ngForm">
+          <div class="container my-4">
+            <input type="text" [(ngModel)]="Username" name="Username" placeholder="Username" /><br />
+            <input type="password" [(ngModel)]="Password" name="Password" placeholder="Password" /><br />
+            <button type="button" (click)="getCallBackTracking(loginForm.value)">Login</button>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
