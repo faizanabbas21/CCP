@@ -1,191 +1,71 @@
-<div _ngcontent-yot-c7="" class="main-content">
-  <div _ngcontent-yot-c7="" class="container-fluid">
-    <div _ngcontent-yot-c7="" class="row">
-      <div _ngcontent-yot-c7="" class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-        <div _ngcontent-yot-c7="" class="card card-stats">
-          <div
-            _ngcontent-yot-c7=""
-            class="card-header card-header-warning card-header-icon"
-          >
-            <div _ngcontent-yot-c7="" class="card-icon">
-              <i _ngcontent-yot-c7="" class="material-icons">person_outline</i>
-            </div>
-            <p _ngcontent-yot-c7="" class="card-category">Patient Visits</p>
-            <h3 _ngcontent-yot-c7="" class="card-title">
-              0 <small _ngcontent-yot-c7="">visits</small>
-            </h3>
-          </div>
-          <div _ngcontent-yot-c7="" class="card-footer">
-            <div _ngcontent-yot-c7="" class="stats">
-              <i _ngcontent-yot-c7="" class="material-icons">date_range</i>
-              today's count
-            </div>
-            <div
-              _ngcontent-yot-c7=""
-              class="refresh-widget mat-tooltip-trigger"
-              mattooltip="Reload"
-              aria-describedby="cdk-describedby-message-18"
-              cdk-describedby-host=""
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+      <div class="card" style="width: 45rem; height: 10rem">
+        <img
+          src="../../assets/images/person.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-calendar4-week"
+              viewBox="0 0 16 16"
             >
-              <i _ngcontent-yot-c7="" class="material-icons pull-right"
-                >refresh</i
-              >
-            </div>
-          </div>
-
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"
+              />
+              <path
+                d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+              />
+            </svg>
+            <h6>today's count</h6>
+          </h5>
         </div>
+        <p class="card-category">Patient Visits</p>
+        <h3 class="card-title">0 <small>visits</small></h3>
       </div>
-      <div _ngcontent-yot-c7="" class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-        <div _ngcontent-yot-c7="" class="card card-stats">
-          <div
-            _ngcontent-yot-c7=""
-            class="card-header card-header-danger card-header-icon"
-          >
-            <div _ngcontent-yot-c7="" class="card-icon">
-              <i _ngcontent-yot-c7="" class="material-icons">coronavirus</i>
-            </div>
-            <p _ngcontent-yot-c7="" class="card-category">
-              Covid Patient Visits
-            </p>
-            <h3 _ngcontent-yot-c7="" class="card-title">
-              0 <small _ngcontent-yot-c7="">visits</small>
-            </h3>
-          </div>
-          <div _ngcontent-yot-c7="" class="card-footer">
-            <div _ngcontent-yot-c7="" class="stats">
-              <i _ngcontent-yot-c7="" class="material-icons">date_range</i>
-              today's count
-            </div>
-            <div
-              _ngcontent-yot-c7=""
-              class="refresh-widget mat-tooltip-trigger"
-              mattooltip="Reload"
-              aria-describedby="cdk-describedby-message-18"
-              cdk-describedby-host=""
-            >
-              <i _ngcontent-yot-c7="" class="material-icons pull-right"
-                >refresh</i
-              >
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!----><!---->
     </div>
-    <!----><!---->
-    <div _ngcontent-yot-c7="" class="row patient-visits">
-      <div _ngcontent-yot-c7="" class="col-xl-12 col-md-12">
-        <div _ngcontent-yot-c7="" class="card">
-          <div _ngcontent-yot-c7="" class="card-header card-header-primary">
-            <h4 _ngcontent-yot-c7="" class="card-title">
-              Patient Visits
-              <a
-                _ngcontent-yot-c7=""
-                aria-controls="patientVisitsCardToggle"
-                aria-expanded="true"
-                class="pull-right card-toggle-btn"
-                data-toggle="collapse"
-                href="#patientVisitsCardToggle"
-                role="button"
-                ><i _ngcontent-yot-c7="" class="material-icons text-white"
-                  >import_export</i
-                ></a
-              >
-            </h4>
-            <p _ngcontent-yot-c7="" class="card-category">
-              Search Patient visits and view reports
-            </p>
-          </div>
-          <div
-            _ngcontent-yot-c7=""
-            class="card-body collapse show"
-            id="patientVisitsCardToggle"
-          >
-            <div _ngcontent-yot-c7="" class="row">
-              <div _ngcontent-yot-c7="" class="col-md-12">
-                <div _ngcontent-yot-c7="" class="form-inline">
-                  <div _ngcontent-yot-c7="" class="form-group">
-                    <div _ngcontent-yot-c7="" class="input-group">
-                      <input
-                        _ngcontent-yot-c7=""
-                        class="form-control ng-untouched ng-pristine ng-valid"
-                        name="dateFrom"
-                        ngbdatepicker=""
-                        placeholder="Reg. date from"
-                      />
-                      <div _ngcontent-yot-c7="" class="input-group-append">
-                        <button
-                          _ngcontent-yot-c7=""
-                          class="btn btn-outline-primary btn-sm"
-                          type="button"
-                        >
-                          <i _ngcontent-yot-c7="" class="material-icons"
-                            >date_range</i
-                          >
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <span _ngcontent-yot-c7="">&nbsp;&nbsp;&nbsp;</span>
-                  <div _ngcontent-yot-c7="" class="form-group">
-                    <div _ngcontent-yot-c7="" class="input-group">
-                      <input
-                        _ngcontent-yot-c7=""
-                        class="form-control ng-untouched ng-pristine ng-valid"
-                        name="dateTo"
-                        ngbdatepicker=""
-                        placeholder="Reg. date to"
-                      />
-                      <div _ngcontent-yot-c7="" class="input-group-append">
-                        <button
-                          _ngcontent-yot-c7=""
-                          class="btn btn-outline-primary btn-sm"
-                          type="button"
-                        >
-                          <i _ngcontent-yot-c7="" class="material-icons"
-                            >date_range</i
-                          >
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <span _ngcontent-yot-c7="">&nbsp;&nbsp;&nbsp;</span>
-                  <div _ngcontent-yot-c7="" class="form-group">
-                    <button
-                      _ngcontent-yot-c7=""
-                      class="btn btn-outline-primary btn-sm"
-                      type="button"
-                    >
-                      <i _ngcontent-yot-c7="" class="material-icons">search</i>
-                      Search
-                    </button>
-                  </div>
-                  <span _ngcontent-yot-c7="">&nbsp;&nbsp;&nbsp;</span>
-                  <div _ngcontent-yot-c7="" class="form-group">
-                    <label _ngcontent-yot-c7="">Total Record(s): 0</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div _ngcontent-yot-c7="" class="row">
-              <div _ngcontent-yot-c7="" class="col-md-12">
-                <!---->
-                <div _ngcontent-yot-c7="" class="text-center ng-star-inserted">
-                  <hr _ngcontent-yot-c7="" />
-                  <h5 _ngcontent-yot-c7="" class="text-primary">
-                    no record found
-                  </h5>
-                  <hr _ngcontent-yot-c7="" />
-                </div>
-                <!----><!---->
-              </div>
-            </div>
 
-          </div>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+      <div class="card" style="width: 45rem; height: 10rem">
+        <img
+          src="../../assets/images/person.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-calendar4-week"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"
+              />
+              <path
+                d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+              />
+            </svg>
+            <h6>today's count</h6>
+          </h5>
         </div>
+        <p class="card-category">Patient Visits</p>
+        <h3 class="card-title">0 <small>visits</small></h3>
       </div>
-      <!---->
     </div>
   </div>
 </div>
+
+<!-- Second card -->
+
+

@@ -6,6 +6,8 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CovidreportsComponent } from './covidreports/covidreports.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { AuthGuardService } from './services/auth-guard.service';
+
 
 const routes: Routes = [
   {
@@ -15,10 +17,13 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+
+
   },
   {
     path: 'b2b',
     component: B2bComponent,
+    canActivate: [AuthGuardService],
     children: [
       {
         path: 'changepassword',
@@ -27,6 +32,7 @@ const routes: Routes = [
       {
         path: 'userprofile',
         component: UserprofileComponent,
+
       },
       {
         path: 'dashboard',
@@ -39,15 +45,6 @@ const routes: Routes = [
 
     ],
   },
-  // {
-  //   path: 'b2b',
-  //   component: B2bComponent,
-  // },
-  // {
-  //   path: 'login',
-  //   component: LoginComponent,
-  // },
-
 
 ];
 

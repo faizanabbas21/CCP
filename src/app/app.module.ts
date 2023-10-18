@@ -13,11 +13,15 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 import { CovidreportsComponent } from './covidreports/covidreports.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 // import { LoginService } from './services/user-data.service';
+import { AuthGuardService } from './services/auth-guard.service';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, B2bComponent, DashboardComponent, UserprofileComponent, CovidreportsComponent, ChangepasswordComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, MatIconModule,  ],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, MatIconModule, MatButtonModule, MatInputModule, NgxSpinnerModule ],
+  providers: [AuthGuardService ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

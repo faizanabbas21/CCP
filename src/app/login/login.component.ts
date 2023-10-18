@@ -4,7 +4,7 @@ import { NgForm } from '@angular/forms';
 import { LoginService } from '../services/user-data.service';
 import { HttpClient } from '@angular/common/http'
 import { Router, NavigationExtras  } from '@angular/router';
-
+import { UserDataService } from '../services/data.service';
 
 
 
@@ -17,18 +17,30 @@ import { Router, NavigationExtras  } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   users: any;
+  token = null;
 
-  constructor(private userData: LoginService , private http: HttpClient, private router:Router) {
+  constructor(
+    private userData: LoginService ,
+    private http: HttpClient,
+    private router:Router,
+    private UserdataService: UserDataService)
+     {
 
   }
 
-  ngOnInit() {
-
-
-  }
+  ngOnInit() {}
 
   Username:any
   Password:any
+
+
+  logout(){
+    this.userData.logout();
+    this.token = null;
+    this.router.navigate(['/login']);
+  }
+
+
   getCallBackTracking(event:any) {
     console.warn('formValues',event);
 
@@ -43,6 +55,7 @@ export class LoginComponent implements OnInit {
          LogVia: 4
         }
     };
+
     console.log(param)
     this.userData.login(param ).subscribe({
 
@@ -55,9 +68,14 @@ export class LoginComponent implements OnInit {
         {
           let tableData = JSON.parse(res.payLoad)
           console.log(tableData)
-          const queryParams = { data: JSON.stringify(tableData) };
 
 
+        if(tableData && tableData[0].token){
+          this.userData.setToken(tableData[0].token)
+        }
+        this.UserdataService.setTableData(tableData);
+
+        const queryParams = { data: JSON.stringify(tableData) };
           this.router.navigate(['b2b/userprofile'], { queryParams });
         }else{
           alert("Invalid Password")
@@ -73,6 +91,8 @@ export class LoginComponent implements OnInit {
     });
   }
 
+
+
   userLogin(data:any){
     console.log(data)
     this.userLogin(data)
@@ -82,3 +102,7 @@ export class LoginComponent implements OnInit {
     console.log(data);
   }
 }
+// function logout() {
+//   throw new Error('Function not implemented.');
+// }
+
